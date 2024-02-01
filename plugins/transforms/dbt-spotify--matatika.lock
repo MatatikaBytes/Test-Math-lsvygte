@@ -1,0 +1,26 @@
+{
+  "plugin_type": "transforms",
+  "name": "dbt-spotify",
+  "namespace": "tap_spotify",
+  "variant": "matatika",
+  "label": "dbt-spotify",
+  "repo": "https://github.com/Matatika/dbt-tap-spotify",
+  "pip_url": "https://github.com/Matatika/dbt-tap-spotify@v0.4.0",
+  "requires": {
+    "EXTRACTORS": [
+      {
+        "name": "tap-spotify",
+        "variant": "matatika"
+      }
+    ],
+    "TRANSFORMERS": [
+      {
+        "name": "dbt",
+        "variant": "dbt-labs"
+      }
+    ]
+  },
+  "vars": {
+    "schema": "{{ env_var('DBT_SOURCE_SCHEMA') }}"
+  }
+}
