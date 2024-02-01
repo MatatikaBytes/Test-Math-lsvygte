@@ -10,6 +10,9 @@ plugins:
   - name: tap-lotr
     variant: mattarderne
     pip_url: git+https://github.com/mattarderne/tap-lotr.git
+  - name: tap-spotify
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spotify@v0.4.0
   loaders:
   - name: target-postgres
     variant: matatika
@@ -25,3 +28,10 @@ plugins:
   - name: analyze-dbt-models
     variant: matatika
     pip_url: git+https://github.com/Matatika/analyze-dbt-models@v0.2.0
+  utilities:
+  - name: matatika
+    variant: matatika
+    pip_url: matatika~=1.16.0
+  - name: dbt-artifacts
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/dbt-artifacts-ext.git

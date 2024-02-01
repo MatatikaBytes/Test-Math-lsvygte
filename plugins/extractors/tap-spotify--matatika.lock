@@ -1,0 +1,43 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-spotify",
+  "namespace": "tap_spotify",
+  "variant": "matatika",
+  "label": "Spotify",
+  "docs": "https://www.matatika.com/docs/instant-insights/tap-spotify/",
+  "repo": "https://github.com/Matatika/tap-spotify",
+  "pip_url": "git+https://github.com/Matatika/tap-spotify@v0.4.0",
+  "description": "Spotify is a music streaming service.\n\nSpotify is a digital music service that allows users to access millions of songs, podcasts, and videos from artists all over the world. Users can create playlists, discover new music, and share their favorite songs with friends. The service is available on various platforms, including desktop and mobile devices, and offers both free and premium subscription options. With Spotify, users can listen to music on-demand, create personalized radio stations, and even download songs for offline listening. The platform also offers a range of features, such as collaborative playlists, personalized recommendations, and social sharing, making it a popular choice for music lovers worldwide.\n### Prerequisites\nTo obtain the Client ID and Client Secret for connecting to Spotify, you need to create a Spotify Developer account and create a new application. Once you have created the application, you will be able to see the Client ID and Client Secret in the application dashboard.\n\nTo obtain the Refresh Token, you need to first obtain an Access Token by authorizing your application to access a user's Spotify account. Once you have the Access Token, you can use it to request a Refresh Token from the Spotify Web API. The Refresh Token will be returned in the response to this request.",
+  "logo_url": "https://app.matatika.com/assets/images/datasource/tap-spotify.png",
+  "capabilities": [
+    "catalog",
+    "discover",
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "client_id",
+      "kind": "password",
+      "label": "Client ID",
+      "description": "A unique identifier for your application registered with Spotify.",
+      "protected": false,
+      "required": "true"
+    },
+    {
+      "name": "client_secret",
+      "kind": "password",
+      "label": "Client secret",
+      "description": "A secret key used to authenticate your application with Spotify.",
+      "protected": false,
+      "required": "true"
+    },
+    {
+      "name": "refresh_token",
+      "kind": "password",
+      "label": "Refresh token",
+      "description": "A token used to obtain a new access token when the current one expires.",
+      "protected": false,
+      "required": "true"
+    }
+  ]
+}
