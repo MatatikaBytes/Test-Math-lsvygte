@@ -1,0 +1,3 @@
+packages:
+- git: https://github.com/Matatika/dbt-tap-spotify
+  revision: v0.4.0
