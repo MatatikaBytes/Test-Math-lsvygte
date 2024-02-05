@@ -13,6 +13,9 @@ plugins:
   - name: tap-spotify
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-spotify@v0.4.0
+  - name: tap-github
+    variant: matatika
+    pip_url: git+https://github.com/MeltanoLabs/tap-github.git
   loaders:
   - name: target-postgres
     variant: matatika
@@ -21,6 +24,9 @@ plugins:
   - name: dbt-spotify
     variant: matatika
     pip_url: https://github.com/Matatika/dbt-tap-spotify@v0.4.0
+  - name: dbt-github
+    variant: matatika
+    pip_url: https://github.com/Matatika/dbt-tap-github@v0.2.0
   transformers:
   - name: dbt
     variant: dbt-labs
@@ -35,6 +41,9 @@ plugins:
   - name: analyze-spotify
     variant: matatika
     pip_url: git+https://github.com/Matatika/analyze-spotify@v0.4.1
+  - name: analyze-github
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-github@v0.2.0
   utilities:
   - name: matatika
     variant: matatika
