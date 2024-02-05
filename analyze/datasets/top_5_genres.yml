@@ -13,7 +13,7 @@ description: |-
   #top-5
 metadata: |-
   {
-    "name": "vw_top_5_genres",
+    "name": "top_5_genres",
     "label": "Your Most Listened Genres By Artist Long Term", 
     "related_table": {
       "columns": [
@@ -38,6 +38,6 @@ visualisation: |-
   }
 query: |-
   SELECT
-  	genre "vw_top_5_genres.genre"
-    , genre_count "vw_top_5_genres.genre_count"
-  FROM vw_top_5_genres
+  	genre "top_5_genres.genre"
+    , genre_count "top_5_genres.genre_count"
+  FROM top_5_genres
