@@ -1,0 +1,14 @@
+{
+  "plugin_type": "files",
+  "name": "files-power-bi",
+  "namespace": "power-bi",
+  "variant": "matatika",
+  "label": "Power BI",
+  "repo": "https://github.com/Matatika/analyze-empty",
+  "pip_url": "git+https://github.com/Matatika/analyze-empty",
+  "description": "Microsoft Power BI is a business intelligence platform that provides nontechnical business users with tools for aggregating, analyzing, visualizing and sharing data.\n\nBelow you can find the requirements and documentation about connecting Matatika to Power BI.\n\n## Requirements\n\n- Power BI\n- Admin/Owner permissions in the Matatika workspace you want to connect to\n\n## Creating the Connection\n\nWe recommend the following guide from Microsoft on how to connect Power BI to your Matatika workspace database.\n\n[Connect to data in Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-quickstart-connect-to-data)\n\nTo get the required connection credentials:\n\n1. Go to your Matatika workspace\n1. Go to the Lab, then Stores\n1. Expand out the datastore you want to connect to, and copy across the required settings.",
+  "logo_url": "https://app.matatika.com/assets/images/files/power-bi.png",
+  "update": {
+    "*.yml": "true"
+  }
+}

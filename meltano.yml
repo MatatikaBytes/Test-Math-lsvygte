@@ -44,6 +44,9 @@ plugins:
   - name: analyze-github
     variant: matatika
     pip_url: git+https://github.com/Matatika/analyze-github@v0.2.0
+  - name: files-power-bi
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-empty
   utilities:
   - name: matatika
     variant: matatika
