@@ -1,3 +1,5 @@
 version: datastores/v0.1
 name: Warehouse
 data_plugin: loaders/target-postgres--matatika
+consumer: false
+producer: false
