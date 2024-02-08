@@ -1,0 +1,79 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-powerbi",
+  "namespace": "tap_powerbi",
+  "variant": "hotgluexyz",
+  "label": "Powerbi",
+  "docs": "https://www.matatika.com/data-details/tap-powerbi/",
+  "repo": "https://gitlab.com/hotglue/tap-powerbi",
+  "pip_url": "git+https://gitlab.com/hotglue/tap-powerbi.git",
+  "executable": "tap-powerbi",
+  "description": "Power BI is a business analytics service by Microsoft that provides interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.\n\nPower BI is a cloud-based business analytics service that allows users to connect to a wide range of data sources, create interactive reports and dashboards, and share insights with others. It provides a user-friendly interface that allows users to easily create and customize reports and visualizations, and includes a wide range of data connectors that allow users to connect to data from a variety of sources, including Excel spreadsheets, cloud-based services like Salesforce and Google Analytics, and on-premises databases. Power BI also includes advanced analytics capabilities, such as predictive analytics and machine learning, that allow users to gain deeper insights into their data. Users can share their reports and dashboards with others, either by publishing them to the web or embedding them in other applications, and can collaborate with others on shared data sets and reports.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/powerbi.png",
+  "capabilities": [
+    "catalog",
+    "discover",
+    "schema-flattening",
+    "state",
+    "stream-maps",
+    "about"
+  ],
+  "settings": [
+    {
+      "name": "client_id",
+      "kind": "password",
+      "label": "Client ID",
+      "description": "A unique identifier for the application connecting to the Powerbi API.",
+      "protected": false
+    },
+    {
+      "name": "client_secret",
+      "kind": "password",
+      "label": "Client Secret",
+      "description": "A secret key used to authenticate the application connecting to the Powerbi API.",
+      "protected": false
+    },
+    {
+      "name": "flattening_enabled",
+      "kind": "boolean",
+      "label": "Flattening Enabled",
+      "description": "A boolean value indicating whether or not to flatten nested data in the API response.",
+      "protected": false
+    },
+    {
+      "name": "flattening_max_depth",
+      "kind": "integer",
+      "label": "Flattening Max Depth",
+      "description": "An integer value indicating the maximum depth to flatten nested data in the API response.",
+      "protected": false
+    },
+    {
+      "name": "redirect_uri",
+      "kind": "string",
+      "label": "Redirect URI",
+      "description": "The URI to redirect the user to after authentication.",
+      "protected": false
+    },
+    {
+      "name": "refresh_token",
+      "kind": "password",
+      "label": "Refresh Token",
+      "description": "A token used to refresh the access token for the Powerbi API.",
+      "protected": false
+    },
+    {
+      "name": "stream_map_config",
+      "kind": "object",
+      "label": "Stream Map Config",
+      "description": "Configuration settings for streaming data to the Powerbi API.",
+      "protected": false
+    },
+    {
+      "name": "stream_maps",
+      "kind": "object",
+      "label": "Stream Maps",
+      "description": "A mapping of data streams to datasets in the Powerbi API.",
+      "protected": false
+    }
+  ]
+}

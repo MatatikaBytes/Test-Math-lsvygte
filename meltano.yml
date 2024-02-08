@@ -16,6 +16,9 @@ plugins:
   - name: tap-github
     variant: matatika
     pip_url: git+https://github.com/MeltanoLabs/tap-github.git
+  - name: tap-powerbi
+    variant: hotgluexyz
+    pip_url: git+https://gitlab.com/hotglue/tap-powerbi.git
   loaders:
   - name: target-postgres
     variant: matatika
